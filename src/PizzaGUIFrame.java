@@ -236,7 +236,8 @@ public class PizzaGUIFrame extends JFrame {
                     // Toppings Rows
                     for (pizzaCheckBox topping : toppingsOptions) {
                         if (topping.isSelected()) {
-                            sb.append(String.format("  + %-28s %10s\n",
+                            toppingsCost += 1.00;
+                            sb.append(String.format("  + %-26s %10s\n",
                                     topping.getName(),
                                     "$1.00"));
                         }
